@@ -1,16 +1,22 @@
 import React from 'react';
-import './styles.js';
+import Header from '../../Components/Header'
+import * as Styled from './styles'
 
-class home extends React.Component{
+
+class Home extends React.Component{
     constructor(props){
         super(props)
     }
 
     render(){
         return(
-            <h1> First Page </h1>
+            <>
+                <Styled.Container>
+                    <Header />
+                </Styled.Container>
+            </>
         );
     }
 }
 
-export default home;
+export default Home;
