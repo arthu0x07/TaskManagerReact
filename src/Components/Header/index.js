@@ -11,7 +11,10 @@ class Header extends React.Component{
     render(){
         return(
             <Styled.Container>
-                
+                <Styled.Menu>
+                    <a href="$">Inicio</a>
+                    <a href="$">Tarefas</a>
+                </Styled.Menu>
             </Styled.Container>
         )
     }
