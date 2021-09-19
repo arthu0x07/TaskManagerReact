@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components';
 
 export const Container = styled.div`
         width: 100%;
-        Background-color: Blue;
 `
 
 export const Global = createGlobalStyle`
@@ -12,4 +11,11 @@ export const Global = createGlobalStyle`
                 Padding: 0px;
         }
         
+`
+
+export const ContainerFilter = styled.div`
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
 `
