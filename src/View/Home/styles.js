@@ -10,7 +10,6 @@ export const Global = createGlobalStyle`
                 Margin: 0px;
                 Padding: 0px;
         }
-        
 `
 
 export const ContainerFilter = styled.div`
@@ -23,4 +22,11 @@ export const ContainerFilter = styled.div`
                 background: none;
                 border: none;
         }
+`
+
+export const ContainerCard = styled.div`
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 `

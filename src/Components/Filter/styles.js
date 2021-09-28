@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 150px;
     height: 50px;
-    background: ${props => props.activation ? '#FFD700'  : '#000000'};
     padding: 5px;
-    cursor: pointer;
+    
     border-radius: 5px;
+    background: ${props => props.activation ? 'green'  : 'slategray'};
+    cursor: pointer;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -22,6 +24,6 @@ export const Container = styled.div`
         font-size: 14px;
     }
     &:hover{
-        background: #FFD700;
+        background: green;
     }
 `
