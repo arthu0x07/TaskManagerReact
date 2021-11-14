@@ -1,25 +1,17 @@
-  
-import React from 'react'
-import * as Styled from './styles'
+import React from "react";
+import * as Styled from "./styles";
+import { Link } from "react-router-dom";
 
-
-class Header extends React.Component{
-    constructor(props){
-        super(props);
-    }
-
-    render(){
-        return(
-            <Styled.Container>
-                <Styled.Menu>
-                    <a href="$">Inicio</a>
-                    <a href="$">Tarefas</a>
-                </Styled.Menu>
-            </Styled.Container>
-        )
-    }
+function Header() {
+  return (
+    <Styled.Container>
+      <Styled.Menu>
+        <Link to="/">INÍCIO</Link>
+        <span className="barra" />
+        <Link to="/task">TAREFA</Link>
+      </Styled.Menu>
+    </Styled.Container>
+  );
 }
-
-
 
 export default Header;
