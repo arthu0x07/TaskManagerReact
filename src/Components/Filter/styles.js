@@ -6,24 +6,24 @@ export const Container = styled.div`
     padding: 5px;
     
     border-radius: 5px;
-    background: ${props => props.activation ? 'green'  : 'slategray'};
+    background: ${props => props.activation ? '#D64933'  : 'slategray'};
     cursor: pointer;
     
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
-    img{
-        width:25px;
-        height:25px;
-    }
+
+    transition-property: background;
+    transition-duration: 0.5s;
+
     span{
         color: #FFF;
         font-weight: bold;
-        align-self: flex-end;
+        align-self: center;
         font-size: 14px;
+        font-family: Roboto;
     }
     &:hover{
-        background: green;
+        background: #D64933;
     }
 `

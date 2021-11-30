@@ -1,20 +1,19 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from '../View/Home';
-import Task from '../View/Task';
+import Home from "../View/Home";
+import Task from "../View/Task";
 
-const Router = () =>{
+const Router = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Task" element={<Task />} />
+        <Route path="/Task/:id" element={<Task />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-    return(
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/task" element={<Task />}/>
-            </Routes>
-        </BrowserRouter>
-    )
-
-}
-
-export default Router; 
+export default Router;
